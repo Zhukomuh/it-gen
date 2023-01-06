@@ -1,4 +1,4 @@
-"""class for create rectangle and work with param data"""
+"""class for create rectangle and work with areas"""
 
 
 class Rectangle:
