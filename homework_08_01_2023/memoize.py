@@ -2,7 +2,6 @@ def fibo():
     fibo_line = [1, 1]
 
     def next(n):
-        nonlocal fibo_line
         if len(fibo_line) >= n:
             return fibo_line[n - 1]
         while len(fibo_line) < n:

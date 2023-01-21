@@ -11,3 +11,5 @@ def save_str_decorator(cls):
 class Dog:
     def __str__(self):
         return f'Woof-woof'
+
+
