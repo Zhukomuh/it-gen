@@ -3,7 +3,7 @@ funcs_ref = []
 
 def deco_reference(func):
     """Adds references to the function that was called
-    by this decorator in global list(funcs_ref)"""
+    by this decorator in list(funcs_ref)"""
     funcs_ref.append(func)
     return func
 

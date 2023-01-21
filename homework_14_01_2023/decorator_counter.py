@@ -2,11 +2,11 @@ total_counter = {}
 
 
 def deco_counter(func):
-    """counting the quantity of func calls with save in global
+    """counting the quantity of func calls with save in
     dict (total_counter) with key:func_name"""
     def inner(*args, **kwargs):
 
-        global total_counter
+
         if func.__name__ in total_counter:
             total_counter[func.__name__] += 1
         else:
@@ -16,7 +16,7 @@ def deco_counter(func):
     return inner
 
 
-@deco_counter
+@deco_counterё
 def add(x, y):
     return x + y
 
