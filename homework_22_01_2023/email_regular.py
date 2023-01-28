@@ -3,7 +3,7 @@ import re
 
 def email_validate(email: str):
     """validate email with regular pattern"""
-    email_pattern = r'[a-zA-Z0-9]*(-?\.?[_a-zA-Z0-9])*@[a-zA-Z0-9]+\.+[a-z]+'
+    email_pattern = r'[a-zA-Z0-9]*(-?\.?[_a-zA-Z0-9])*@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*'
     if re.match(email_pattern, email):
         return email
     return 'Email is not validate'
